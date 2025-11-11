@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer - Pomodoro Technique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Focus Timer</h1>
+        <p class="description">Boost productivity with the Pomodoro Technique</p>
+        
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="work">Work Session</button>
+            <button class="mode-btn" data-mode="shortBreak">Short Break</button>
+            <button class="mode-btn" data-mode="longBreak">Long Break</button>
+        </div>
+        
+        <div class="timer-display" id="timer">25:00</div>
+        
+        <div class="status" id="status">Ready to focus? Let's start!</div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn btn-primary" id="start-btn">Start</button>
+            <button class="btn btn-secondary" id="pause-btn" disabled>Pause</button>
+            <button class="btn btn-secondary" id="reset-btn">Reset</button>
+        </div>
+        
+        <div class="session-counter">
+            Sessions completed: <span id="session-count">0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
